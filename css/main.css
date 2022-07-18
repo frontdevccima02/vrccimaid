@@ -1,0 +1,261 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+  img{
+      width: 100%;
+  }
+  a{
+      text-decoration: none;
+  }
+
+/* INDICE 
+---Fuentes 
+---headers
+---Colores de Texto
+---Background
+*/
+
+
+
+/* Fuentes */
+
+@font-face {
+	font-family: futuraLight;
+	src: url(../fonts/Futura/FuturaPTLight.otf);
+}
+
+@font-face {
+	font-family: futuraBook;
+	src: url(../fonts/Futura/FuturaPTBook.otf);
+}
+
+@font-face {
+	font-family: futuraDemi;
+	src: url(../fonts/Futura/FuturaPTDemi.otf);
+}
+
+@font-face {
+	font-family: futuraMed;
+	src: url(../fonts/Futura/FuturaPTMedium.otf);
+}
+@font-face {
+	font-family: futuraBold;
+	src: url(../fonts/Futura/FuturaPTBold.otf);
+}
+
+
+p{
+    color: #021D49;
+    font-size: 1rem;
+}
+.right-text{
+    text-align: right;
+}
+.left-text{
+    text-align: left;
+}
+.center-text{
+    text-align: center;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+/* header */
+h1{
+    color: #021D49;
+    font-family: 'futuraMed';
+    font-size: 4.5rem;
+}
+h2{
+    color: #021D49;
+    font-family: 'futuraDemi';
+    font-size: 2.5rem;
+}
+h3{
+    color: #021D49;
+    font-family: 'futuraBook';
+    font-size: 2rem;
+}
+
+h4{
+    color: #021D49;
+    font-family: 'futuraBook';
+    font-size: 1.5rem;
+}
+h5{
+    color: #021D49;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'futuraBook';
+}
+.title-h2{
+    padding-bottom: 2.5rem;
+}
+
+/* Color de Texto */
+
+.text-blue{
+    color: #021D49;
+}
+.text-white{
+    color: #fff;
+}
+
+
+/* Background */
+
+.bg-main{
+    background-image: url(../img/bg/bg-info-habitta.jpg);
+    width: 100%;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.bg-blue{
+    background-color: #021B45;
+}
+.bg-gray{
+    background-color: #F3F4F4 !important;
+}
+
+.bg-gray-100{
+    background-color: #96979833 !important;
+}
+.bg-item-pb{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    width: 416px;
+    height: 236px;
+}
+.bg-trasparent-item{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(243 244 244 / 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-queretaro{
+    background-repeat: no-repeat;
+    background-image: url(../img/bg/bg-porttoblanco-queretaro.jpg);
+}
+.bg-sanluis {
+    background-image: url(../img/bg/bg-porttob-sanluispotosi.jpg);
+}
+.bg-tulum{
+    background-image: url(../img/bg/bg-porttoblanco-tulum.jpg);
+}
+.bg-sanmiguel{
+    background-image: url(../img/bg/bg-porttoblanco-san-migue-allende.jpg);
+}
+.bg-merida{
+    background-image: url(../img/bg/bg-porttoblanco-merida.jpg);
+}
+
+/* botones  */
+.btn-blue{
+    border: 1px  solid #021D49 ;
+    background-color: #021D49 !important;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+.btn-blue:hover{
+  
+    color: #fff !important;  
+}
+.btn-aeropuerto{
+    display: block;
+    margin: 6px;
+    background-color: #00C446;
+}
+
+/* navegacion */
+.n-item-text{
+    color: #021D49 !important;
+    font-family: futuraDemi;
+    font-size: 1.5rem;
+    border-right: .5px solid #CDDAE0;
+    padding: 0 1rem !important;
+    transition: all ease .3s;
+}
+.n-item-text:hover{
+    color: #011638 !important;
+    font-family: futuraDemi;
+    font-size: 1.7rem;
+    border-right: .5px solid #CDDAE0;
+    padding: 0 1rem !important;
+    transition: all ease .3s;
+}
+#contacto {
+    border: none;
+}
+
+.n-text{
+    color: #021D49 !important;
+    font-family: futuraDemi;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.hero{
+    display: flex;
+    flex-direction:column ;
+    height: 75vh;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.hero span{
+    font-family: futuraBold;
+}
+
+.hero .hero-img #logo-habitta-hero{
+    width: 220px;
+}
+.box-items-habitta{
+    display: flex;
+    justify-content: center;
+}
+.box-menu-item{ 
+    display: flex;
+    height: 5.5rem;
+    justify-content: center;
+}
+.iconos-menu img{
+    width: 60px;
+    margin: 10px;
+}
+.iconos-menu-title{
+    display: flex;
+    align-items: center;
+}
+
+.section-m100{
+    padding: 100px 0;
+}
+
+.pb-container .pb-title h3{
+    padding-top: 1.5rem;
+}
+
+.logo-cimatario-item{
+    width: 222px;
+}
+.proximos-lanzamientos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
